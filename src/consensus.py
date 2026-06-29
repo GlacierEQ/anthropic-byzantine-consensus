@@ -73,7 +73,7 @@ class ByzantineDetector:
 
     def __init__(self, detection_window: int = 100):
         self.detection_window = detection_window
-        self.agent histories: Dict[int, List[dict]] = {}
+        self.agent_histories: Dict[int, List[dict]] = {}
         self.suspicion_scores: Dict[int, float] = {}
 
     def record_vote(self, vote: AgentVote):
